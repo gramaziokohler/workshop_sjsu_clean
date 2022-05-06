@@ -1,10 +1,14 @@
 import os
+import sys
 import logging
 import compas
 import math
 
 from compas.robots import Configuration
 from compas_fab.backends.pybullet import LOG
+
+path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(path)
 
 from workshop_sjsu.planning.setup import Client
 from workshop_sjsu.planning.setup import sjsu_setup

@@ -1,8 +1,15 @@
 import math
-import Rhino.Geometry as rg
-from compas_fab.utilities import map_range
-from ghpythonlib.treehelpers import tree_to_list
 from compas.utilities import color_to_rgb
+
+
+def map_range(value, from_min, from_max, to_min, to_max):
+    """Performs a linear interpolation of a value within the range of [from_min,
+        from_max] to another range of [to_min, to_max].
+    """
+    from_range = from_max - from_min
+    to_range = to_max - to_min
+    value_scaled = (value - from_min) / float(from_range)
+    return to_min + (value_scaled * to_range)
 
 
 def cartesian_to_polar(x, y):
