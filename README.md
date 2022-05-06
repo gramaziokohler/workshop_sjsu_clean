@@ -116,14 +116,18 @@ Most of the examples will be used from Rhino/Grasshopper, but the option to use 
 
 ## Installation
 
-We use `conda` to make sure we create a clean, isolated coding environment:
-
-    (base) conda env create -f https://dfab.link/sjsu-2021.yml
+Open Anaconda Prompt
+    
+    cd FOLDER_WHERE_YOU_WANT_TO_STORE_FILES
 
 ### Get the workshop files
 
+    (base) git clone https://github.com/gramaziokohler/workshop_sjsu_clean
+ 
+ We use `conda` to make sure we create a clean, isolated coding environment:
+    
+    (base) conda env create -f environment.yml
     (base) conda activate sjsu
-    (sjsu) git clone https://github.com/gramaziokohler/workshop_sjsu
 
 ### Add COMPAS to Rhino
 
