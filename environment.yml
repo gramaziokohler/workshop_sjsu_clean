@@ -1,0 +1,11 @@
+name: sjsu
+channels:
+    - conda-forge
+
+dependencies:
+   - python=3.8
+   - pip
+   - git
+   - compas>=1.8.1
+   - compas_fab>=0.19.1
+   - requests
